@@ -1,0 +1,52 @@
+---
+layout: runbook
+title: '#4471 split · three problems, not one'
+owner: Karolina Szlenk
+status: draft
+reviewed: 2026-10-30
+signature: Karolina Szlenk
+---
+
+<script>
+  import ProblemTable from '#lib/kb/ProblemTable.svelte';
+  import Callout from '#lib/kb/Callout.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+
+  // Where each problem is tracked now. Filled in when the tickets exist.
+  const tickets = {};
+</script>
+
+[#4471](/kb/incidents/4471) was merged on subject line ([decision 0001](/kb/decisions/0001-dedupe-by-subject))
+and marked known: one bug, one fix queued. Read by what went wrong, its reports describe three
+problems. The queued parser fix closes one of them.
+
+<Callout kind="warn">
+#4471 is not one issue. Each problem below has its own ticket and its own fix.
+</Callout>
+
+## The problems
+
+<ProblemTable ticket={4471} {tickets} />
+
+## How to tell them apart
+
+- **`month-first`**: the shared parser reads every date month first. Day-first tenants get day
+  and month swapped: booked for 2 July, invite says 7 February. This is the bug #4471 names.
+- **`form-hint`**: booking-v3's date field prints `MM/DD/YYYY` under it. People at day-first
+  tenants type what the hint tells them, and the form reads it the tenant's way. Same symptom,
+  but the fix is in the form, not the parser. Only tenants on booking-v3, only through the form.
+- **`one-day`**: the date is not swapped; it moves by one day. Two cities, two weekdays for one
+  meeting; an invite that arrives before the booking; "only June". That points at time zones,
+  not at day and month order. The desk read these as one-day moves (`desk-notes.json`), and the
+  #4471 page still counts them under the parser.
+
+Intake's tag (`meta.intakeTag`) is a guess from the reporter's browser and disagrees with the
+tenant for many reports. Counts here come from the tenant and channel, not from the tag.
+
+## What to change
+
+- Keep #4471 for the parser. Its count is the `month-first` row, not every report merged into it.
+- A subject line says what the reporter saw, not what broke. Before marking a big ticket known,
+  read a sample of bodies and check them against the tenant and channel.
+
+<RenderStamp {signature} />
