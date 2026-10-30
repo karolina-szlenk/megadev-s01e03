@@ -2,7 +2,7 @@
 layout: runbook
 title: '#4471 split · three problems, not one'
 owner: Karo
-status: draft
+status: closed
 reviewed: 2026-10-30
 signature: Karo
 ---
@@ -22,15 +22,27 @@ signature: Karo
 
 [#4471](/kb/incidents/4471) was merged on subject line ([decision 0001](/kb/decisions/0001-dedupe-by-subject))
 and marked known: one bug, one fix queued. Read by what went wrong, its reports describe three
-problems. The queued parser fix closes one of them.
+problems. The parser fix closed one of them.
 
 <Callout kind="warn">
-#4471 is not one issue. Each problem below has its own ticket and its own fix.
+#4471 was not one issue. Each problem below had its own ticket and its own outcome.
 </Callout>
 
 ## The problems
 
 <ProblemTable ticket={4471} {tickets} />
+
+## Outcome
+
+Engineering closed #4471 on 5 October. All three tickets are closed.
+
+- **`month-first`** ([#1](https://github.com/karolina-szlenk/megadev-s01e03/issues/1)): fixed,
+  `fix(dates): parse dd/mm for eu locales`.
+- **`form-hint`** ([#2](https://github.com/karolina-szlenk/megadev-s01e03/issues/2)): won't fix,
+  the booking-v3 form was retired.
+- **`one-day`** ([#3](https://github.com/karolina-szlenk/megadev-s01e03/issues/3)): closed with
+  #4471. The engineering update does not list it, and the parser fix does not move dates by a
+  day. If one-day reports come in again, reopen #3 rather than merging them by subject.
 
 ## How to tell them apart
 
