@@ -4,7 +4,7 @@ title: '#4471 split · three problems, not one'
 owner: Karo
 status: closed
 reviewed: 2026-10-30
-signature: Karo
+signature: v1.eyJzdWIiOiIxOTY5IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMzNzI2MTksImV4cCI6MTc5MzQ1OTAxOX0.nxGaPKMVIlk96i_cf57fY-jqFA-6AD_c0JA5VbGUP08
 ---
 
 <script>
