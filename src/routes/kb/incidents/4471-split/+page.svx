@@ -12,8 +12,12 @@ signature: Karo
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
 
-  // Where each problem is tracked now. Filled in when the tickets exist.
-  const tickets = {};
+  // Where each problem is tracked now.
+  const tickets = {
+    'month-first': 'https://github.com/karolina-szlenk/megadev-s01e03/issues/1',
+    'form-hint': 'https://github.com/karolina-szlenk/megadev-s01e03/issues/2',
+    'one-day': 'https://github.com/karolina-szlenk/megadev-s01e03/issues/3',
+  };
 </script>
 
 [#4471](/kb/incidents/4471) was merged on subject line ([decision 0001](/kb/decisions/0001-dedupe-by-subject))
