@@ -1,10 +1,10 @@
 ---
 layout: runbook
 title: '#4471 split · three problems, not one'
-owner: Karolina Szlenk
+owner: Karo
 status: draft
 reviewed: 2026-10-30
-signature: Karolina Szlenk
+signature: Karo
 ---
 
 <script>
