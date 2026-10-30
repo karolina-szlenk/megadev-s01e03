@@ -26,7 +26,11 @@
     {#each split.groups as g (g.problem)}
       <tr>
         <td><code>{g.problem}</code><br /><span class="what">{PROBLEM_TITLE[g.problem]}</span></td>
-        <td>{g.reports.length}</td>
+        <td>
+          {g.reports.length}
+          {#if g.footnote && 'oneDay' in g.footnote}<br /><span class="what">incl. {g.footnote.oneDay} one-day</span>{/if}
+          {#if g.footnote && 'filedUnder' in g.footnote}<br /><span class="what">also counted in {g.footnote.filedUnder.join(', ')}</span>{/if}
+        </td>
         <td>{g.tenants}</td>
         <td>{g.firstSeen} → {g.lastSeen}</td>
         <td>
@@ -36,6 +40,8 @@
     {/each}
   </tbody>
 </table>
+
+<p class="what">Counted the desk's way: each report where its tenant and channel file it. One-day moves are counted there too, and have their own row.</p>
 
 <style>
   .sum { font-size: 1.1rem; }

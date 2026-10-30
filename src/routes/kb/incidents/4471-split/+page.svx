@@ -41,8 +41,9 @@ problems. The queued parser fix closes one of them.
   but the fix is in the form, not the parser. Only tenants on booking-v3, only through the form.
 - **`one-day`**: the date is not swapped; it moves by one day. Two cities, two weekdays for one
   meeting; an invite that arrives before the booking; "only June". That points at time zones,
-  not at day and month order. The desk read these as one-day moves (`desk-notes.json`), and the
-  #4471 page still counts them under the parser.
+  not at day and month order. The desk read these as one-day moves (`desk-notes.json`). It counts
+  them where their tenant files them, under the parser, and so does the table above; the parser
+  fix will not close them.
 
 Intake's tag (`meta.intakeTag`) is a guess from the reporter's browser and disagrees with the
 tenant for many reports. Counts here come from the tenant and channel, not from the tag.

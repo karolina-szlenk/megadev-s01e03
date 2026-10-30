@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../../_app/immutable/entry/start.__N7L3i5.js" rel="modulepreload">
+    <link href="../../_app/immutable/entry/start.D4LTzFfm.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/fruYDLqp.js" rel="modulepreload">
-		<link href="../../_app/immutable/chunks/BdfKRm4u.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/ByEpbpqb.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/Cbdj2qAo.js" rel="modulepreload">
-		<link href="../../_app/immutable/entry/app.C9iYVQiH.js" rel="modulepreload">
+		<link href="../../_app/immutable/entry/app.DP7LR6Nv.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/BkYfdh9H.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/BD3UdjSR.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/wnmzq4eU.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/TGQFHf5e.js" rel="modulepreload">
 		<link href="../../_app/immutable/nodes/0.CCpBT1ka.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/ybC49tkz.js" rel="modulepreload">
-		<link href="../../_app/immutable/nodes/5.CeY3LZEU.js" rel="modulepreload">
-		<link href="../../_app/immutable/chunks/CMi4X-tF.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/5.DLjYcast.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CCS-6IKe.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/DFPV7QJw.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/DxLlZHEF.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/iXLSwIXB.js" rel="modulepreload">
@@ -27,27 +27,28 @@
   <body data-sveltekit-preload-data="hover">
     <div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><div class="kb svelte-e2jw2j"><header><a class="crumb svelte-e2jw2j" href="/kb">support desk · kb</a> <h1 class="svelte-e2jw2j">#4471 split · three problems, not one</h1> <p class="meta svelte-e2jw2j"><span>owner <b>Karo</b></span> <span class="status draft svelte-e2jw2j">draft</span> <span class="svelte-e2jw2j">reviewed 2026-10-30 · 0 days ago</span></p></header> <!--[-1--><!--]--> <main><p><a href="/kb/incidents/4471">#4471</a> was merged on subject line (<a href="/kb/decisions/0001-dedupe-by-subject">decision 0001</a>)
 and marked known: one bug, one fix queued. Read by what went wrong, its reports describe three
-problems. The queued parser fix closes one of them.</p> <aside class="warn svelte-17bri61"><!---->#4471 is not one issue. Each problem below has its own ticket and its own fix.<!----></aside><!----> <h2>The problems</h2> <p class="sum svelte-1op6c6"><strong>412</strong> reports merged into #4471 · <strong>3</strong> problems</p> <table><thead><tr><th>problem</th><th>reports</th><th>tenants</th><th>seen</th><th>ticket</th></tr></thead><tbody><!--[--><tr><td><code>month-first</code><br/><span class="what svelte-1op6c6">Shared parser reads dates month first in day-first locales</span></td><td>374</td><td>11</td><td>2026-04-01 → 2026-10-04</td><td><!--[0--><a href="https://github.com/karolina-szlenk/megadev-s01e03/issues/1">#1</a><!--]--></td></tr><tr><td><code>form-hint</code><br/><span class="what svelte-1op6c6">booking-v3 date hint says MM/DD/YYYY to day-first tenants</span></td><td>33</td><td>3</td><td>2026-04-17 → 2026-09-22</td><td><!--[0--><a href="https://github.com/karolina-szlenk/megadev-s01e03/issues/2">#2</a><!--]--></td></tr><tr><td><code>one-day</code><br/><span class="what svelte-1op6c6">Dates move by one day (time zone), not flipped</span></td><td>5</td><td>5</td><td>2026-04-02 → 2026-10-04</td><td><!--[0--><a href="https://github.com/karolina-szlenk/megadev-s01e03/issues/3">#3</a><!--]--></td></tr><!--]--></tbody></table><!----> <h2>How to tell them apart</h2> <ul><li><strong><code>month-first</code></strong>: the shared parser reads every date month first. Day-first tenants get day
+problems. The queued parser fix closes one of them.</p> <aside class="warn svelte-17bri61"><!---->#4471 is not one issue. Each problem below has its own ticket and its own fix.<!----></aside><!----> <h2>The problems</h2> <p class="sum svelte-1op6c6"><strong>412</strong> reports merged into #4471 · <strong>3</strong> problems</p> <table><thead><tr><th>problem</th><th>reports</th><th>tenants</th><th>seen</th><th>ticket</th></tr></thead><tbody><!--[--><tr><td><code>month-first</code><br/><span class="what svelte-1op6c6">Shared parser reads dates month first in day-first locales</span></td><td>379 <!--[0--><br/><span class="what svelte-1op6c6">incl. 5 one-day</span><!--]--> <!--[-1--><!--]--></td><td>11</td><td>2026-04-01 → 2026-10-04</td><td><!--[0--><a href="https://github.com/karolina-szlenk/megadev-s01e03/issues/1">#1</a><!--]--></td></tr><tr><td><code>form-hint</code><br/><span class="what svelte-1op6c6">booking-v3 date hint says MM/DD/YYYY to day-first tenants</span></td><td>33 <!--[-1--><!--]--> <!--[-1--><!--]--></td><td>3</td><td>2026-04-17 → 2026-09-22</td><td><!--[0--><a href="https://github.com/karolina-szlenk/megadev-s01e03/issues/2">#2</a><!--]--></td></tr><tr><td><code>one-day</code><br/><span class="what svelte-1op6c6">Dates move by one day (time zone), not flipped</span></td><td>5 <!--[-1--><!--]--> <!--[0--><br/><span class="what svelte-1op6c6">also counted in month-first</span><!--]--></td><td>5</td><td>2026-04-02 → 2026-10-04</td><td><!--[0--><a href="https://github.com/karolina-szlenk/megadev-s01e03/issues/3">#3</a><!--]--></td></tr><!--]--></tbody></table> <p class="what svelte-1op6c6">Counted the desk's way: each report where its tenant and channel file it. One-day moves are counted there too, and have their own row.</p><!----> <h2>How to tell them apart</h2> <ul><li><strong><code>month-first</code></strong>: the shared parser reads every date month first. Day-first tenants get day
 and month swapped: booked for 2 July, invite says 7 February. This is the bug #4471 names.</li> <li><strong><code>form-hint</code></strong>: booking-v3’s date field prints <code>MM/DD/YYYY</code> under it. People at day-first
 tenants type what the hint tells them, and the form reads it the tenant’s way. Same symptom,
 but the fix is in the form, not the parser. Only tenants on booking-v3, only through the form.</li> <li><strong><code>one-day</code></strong>: the date is not swapped; it moves by one day. Two cities, two weekdays for one
 meeting; an invite that arrives before the booking; “only June”. That points at time zones,
-not at day and month order. The desk read these as one-day moves (<code>desk-notes.json</code>), and the
-#4471 page still counts them under the parser.</li></ul> <p>Intake’s tag (<code>meta.intakeTag</code>) is a guess from the reporter’s browser and disagrees with the
+not at day and month order. The desk read these as one-day moves (<code>desk-notes.json</code>). It counts
+them where their tenant files them, under the parser, and so does the table above; the parser
+fix will not close them.</li></ul> <p>Intake’s tag (<code>meta.intakeTag</code>) is a guess from the reporter’s browser and disagrees with the
 tenant for many reports. Counts here come from the tenant and channel, not from the tag.</p> <h2>What to change</h2> <ul><li>Keep #4471 for the parser. Its count is the <code>month-first</code> row, not every report merged into it.</li> <li>A subject line says what the reporter saw, not what broke. Before marking a big ticket known,
 read a sample of bodies and check them against the tenant and channel.</li></ul> <!--[0--><p class="stamp svelte-1280m42">desk ref <b class="svelte-1280m42">DR-NXPY-RRGY</b></p><!--]--><!----><!----></main> <footer class="svelte-e2jw2j">Pages are written by people. Tables and charts are built from data at render time.</footer></div><!--]--><!----><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_x7mv09 = {
+					__sveltekit_p72g0h = {
 						base: new URL("../..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../../_app/immutable/entry/start.__N7L3i5.js"),
-						import("../../_app/immutable/entry/app.C9iYVQiH.js")
+						import("../../_app/immutable/entry/start.D4LTzFfm.js"),
+						import("../../_app/immutable/entry/app.DP7LR6Nv.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 5],
